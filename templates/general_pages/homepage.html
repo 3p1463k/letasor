@@ -1,0 +1,28 @@
+{% extends "shared/base.html" %}
+{% block title %}
+  <title>BYODAB</title>
+{% endblock %}
+{% block content %}
+<!-- NAV -->
+<div class="w3-container w3-center  w3-padding-16">
+  <h1>DETA DBVIEW Tablesorter</h1>
+</div>
+<!-- Start Content -->
+<div class="w3-container w3-center w3-padding-16">
+<style>form.colr {background-color: #BD3D3A;}
+    input[type=text]{width: 75%; margin-left: auto; margin-right: auto;}
+</style>
+
+<form action="/" enctype="multipart/form-data" method="post" class="w3-container colr w3-card-4 w3-round w3-margin">
+  <h2 class="w3-center">Enter the datbase name to view</h2>
+  <div class="w3-row  w3-section">
+    <input class="w3-input w3-border w3-round" name="BaseName" type="text" placeholder="DatabaseName"required>
+  </div>
+  <div class="w3-row w3-section">
+    <button class="w3-button w3-round w3-khaki w3-ripple w3-padding" type="submit">View database</button>
+  </div>
+</form>
+
+</div>
+<!-- End Content -->
+{% endblock %}
